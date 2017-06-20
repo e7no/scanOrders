@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="x-dns-prefetch-control" content="on"/>
+<meta name="msapplication-tap-highlight" content="no"/>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta content="type" http-equiv="application/x-www-form-urlencoded"/>
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta content="telephone=no" name="format-detection">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="screen-orientation" content="portrait">
+<meta name="x5-orientation" content="portrait">
+<meta name="full-screen" content="yes">
+<meta name="x5-fullscreen" content="true">
+<meta name="browsermode" content="application">
+<meta name="x5-page-mode" content="app">
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="yes" name="apple-touch-fullscreen"/>
+<link rel="shortcut icon" href="favicon.ico"/>
+<link rel="stylesheet" href="css/detail.css">
+<title>我的订单</title>
+</head>
+<body>
+<section id="MyOrderDetailsId">
+<div>
+  <section id="nav">
+  <div class="nav-name lt active">
+    订单状态
+  </div>
+  <div class="nav-name rt">
+    订单详情
+  </div>
+  </section>
+  <section id="order-statue">
+  <div id="orderStatueMain">
+    <div class="bg_icon"></div>
+    <ul id="sign-tag">
+      <li class="img">
+        <!-- <img class=""　src="./images/pic_bill.png" alt=""> -->
+         <img src="./images/pic_bill_h.png" alt="">
+      </li>
+      <li class="hr r1">
+      <div id="hr1_div">
+      </div>
+      </li>
+      <li class="img">
+          <img id="kitchen_img" src="./images/pic_kitchen.png" alt="">
+      </li>
+      <li class="hr r2">
+      <div id="hr2-div"></div>
+      </li>
+      <li class="img">
+      <img id="finish_img" src="./images/pic_over.png" alt="">
+      </li>
+    </ul>
+    <ul id="sign-text">
+      <li id="first-text">支付成功</li>
+      <li id="second-text">厨房接单</li>
+      <li id="three-text">用餐结束</li>
+    </ul>
+    <h1 class="remindH1">
+    <span>您的订单正在备餐中，请您稍等!<br>
+    请勿随意更换座位</span>
+    </h1>
+  </div>
+  <ul class="list-ul">
+    <li class="list-li line-one">
+    <span class="info-text">配送台桌号：</span>
+    <span>&nbsp;&nbsp;</span>
+    <span class="big-title"> 32A</span>
+    </li>
+    <li class="list-li line-one">
+    <span class="info-text">支付时间：</span>
+    <span>&nbsp;&nbsp;</span>
+    <span class="time"> 2017-3-17 12:00</span>
+    </li>
+  </ul>
+  <span>
+  </span>
+  </section>
+  <section id="order-detail" style="display:none;">
+      <div class="detail-first">
+        <ul>
+            <li class="first-title">商家【桂香美食】</li>
+            <li class="first-li"><h4>鱼香茄子</h4><span>×1</span><b>￥18</b></li>
+            <li class="first-li"><h4>鱼香茄子</h4><span>×1</span><b>￥28</b></li>
+            <li class="first-li"><h4>鱼香茄子</h4><span>×1</span><b>￥20</b></li>
+            <li class="first-li"><h4>鱼香茄子</h4><span>×1</span><b>￥13</b></li>
+        </ul>
+      </div>
+      <div class="detail-second">
+         <ul>
+            <li><h4>消费金额</h4><span>￥28</span></li>
+            <li><h4>优惠金额</h4><span>￥20</span></li>
+            <li><h4>实付金额</h4><b>￥13</b></li>
+        </ul>
+      </div>
+      <div class="detail-thrid">
+        <div><h4>备注：</h4><span>打包、免辣</span></div>
+      </div>
+  </section>
+</div>
+</section>
+<!-- 底部Tabc菜单 -->
+<footer class="footer-nav">
+<div class="footer-nav-div">
+  <a href="index.html">
+  <ul class="online-ul footer-nav-ul">
+    <li class="online-icon"></li>
+    <li class="text-li">点餐</li>
+  </ul>
+</ul>
+</div>
+<div class="footer-nav-div">
+  <a href="myOrder.html">
+  <ul class="footer-nav-ul history-ul">
+    <li class="history-icon"></li>
+    <li class="text-li">订单</li>
+  </ul>
+  </a>
+</div>
+</footer>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#hr1_div').css({ width: "100%"});
+    setTimeout(function () { 
+        $("#kitchen_img").attr({ src: "./images/pic_kitchen_h.png"});
+        $("#second-text").css({ color: "#dd2a2a"});
+         }, 2000);
+    });
+    $('.nav-name.lt').click(function (){
+          $(".nav-name.rt").removeClass("active");
+          $(".nav-name.lt").addClass('active').siblings().removeClass('active');
+          $('#order-statue').show();
+          $('#order-detail').hide();
+    });
+     $('.nav-name.rt').click(function (){
+          $(".nav-name.lt").removeClass("active");
+          $(".nav-name.rt").addClass('active').siblings().removeClass('active');
+          $('#order-detail').show();
+          $('#order-statue').hide();
+    });
+</script>
+</html>
+</html>

@@ -1,0 +1,526 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="x-dns-prefetch-control" content="on"/>
+<meta name="msapplication-tap-highlight" content="no"/>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta content="type" http-equiv="application/x-www-form-urlencoded"/>
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta content="telephone=no" name="format-detection">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="screen-orientation" content="portrait">
+<meta name="x5-orientation" content="portrait">
+<meta name="full-screen" content="yes">
+<meta name="x5-fullscreen" content="true">
+<meta name="browsermode" content="application">
+<meta name="x5-page-mode" content="app">
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="yes" name="apple-touch-fullscreen"/>
+<link rel="shortcut icon" href="favicon.ico"/>
+<link rel="stylesheet" href="css/style.css">
+<script src="http://cdn.bootcss.com/angular.js/1.6.3/angular.min.js"></script>
+<title>汇汇美食</title>
+</head>
+<body>
+<section id="orderFoodId">
+<div>
+    <section id="menu-section-top">
+         <!-- 右侧列表 -->
+    <div id="nav-div" >
+        <ul id="nav-ul" ng-app="">
+            <li><i class="search-btn-icon"></i></li>
+            <li id="01" class="current-classify">
+            <i class="hot-menus-icon ilBk-middle"></i><span class="ilBk-middle">销量排行</span>
+            </li>
+            <li id="92613"><span class="ilBk-middle">桂香特色焖饭</span></li>
+            <li id="92614"><span class="ilBk-middle">卤水类饭</span></li>
+            <li id="92615"><span class="ilBk-middle">香辣川湘味饭</span></li>
+            <li id="92616"><span class="ilBk-middle">现炒快餐类</span><b class="classify-num-i">{{5+5}}</b></li>
+            <li id="92617"><span class="ilBk-middle">特色焗饭</span></li>
+            <li id="92618"><span class="ilBk-middle">炒饭炒粉类</span></li>
+            <li id="92619"><span class="ilBk-middle">原盅炖汤</span></li>
+            <li id="92620"><span class="ilBk-middle">凉拌白灼类</span></li>
+            <li id="92622"><span class="ilBk-middle">传统道滘美食</span></li>
+            <li id="92623"><span class="ilBk-middle">老火汤粉面类</span></li>
+            <li id="92625"><span class="ilBk-middle">生滚煲仔粥类</span></li>
+            <li id="92626"><span class="ilBk-middle">桂香传统糖水</span></li>
+            <li id="92627"><span class="ilBk-middle">鲜榨果汁</span></li>
+            <li id="92628"><span class="ilBk-middle">冻饮类</span></li>
+            <li id="92629"><span class="ilBk-middle">例牌类</span></li>
+            <li id="92621"><span class="ilBk-middle">香滑肠粉类</span></li>
+            <li id="92624"><span class="ilBk-middle">爽滑蒸面</span></li>
+        </ul>
+    </div>
+    <!-- 左侧列表 -->
+    <div id="foodsMenu-div">
+        <!-- 左侧总分类名 -->
+       <!-- <div class="now-classify-title">销量排行</div>-->
+        <article id="menu-article">
+        <div class="classify-content" id="groupTitle0" data-idx="0">
+            <span class="classify-title">销量排行</span>
+            <ul class="menu-ul">
+                <li class="smallImg-footItem forsearch" id="1535751">
+                <div>
+                    <img src="http://imgcdn.diandianwaimai.com/dd_op/attached/image/140x126/20170304135816642738.jpg" alt="菜品图片">
+                    <span>已售罄</span>
+                </div>
+                <div class="info">
+                    <div class="footItem-name">
+                        <span><span>尖椒回锅肉饭</span></span>
+                    </div>
+                    <div class="footerItem-info-operate">
+                        <div class="operate-div">
+                            <div class=" reduce-btn-div">
+                                <span class="reduce-btn btn ilBk-middle"></span>
+                            </div>
+                            <div>
+                                <span class="select-num ilBk-middle">1</span>
+                            </div>
+                            <div class="add-btn-div">
+                                <span class="add-btn btn ilBk-middle"></span>
+                            </div>
+                        </div>
+                        <div class="footerItem-info">
+                            <div>
+                                <span class="sale-num-small ilBk-middle">45</span>
+                            </div>
+                            <div>
+                                <span class="sale-price ilBk-middle"><span>￥</span>
+                                <span>15</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </li>
+                <li class="smallImg-footItem forsearch" id="1535728">
+                <div>
+                    <img src="http://imgcdn.diandianwaimai.com/dd_op/attached/image/140x126/20170304135816413874.jpg" alt="菜品图片">
+                </div>
+                <div class="info">
+                    <div class="footItem-name">
+                        <span>
+                        <span>酸甜排骨饭</span>
+                        </span>
+                    </div>
+                    <div class="footerItem-info-operate">
+                        <div class="operate-div">
+                            <div class=" reduce-btn-div">
+                                <span class="reduce-btn btn ilBk-middle"></span>
+                            </div>
+                            <div>
+                                <span class="select-num ilBk-middle">1</span>
+                            </div>
+                            <div class="add-btn-div">
+                                <span class="add-btn btn ilBk-middle"></span>
+                            </div>
+                        </div>
+                        <div class="footerItem-info">
+                            <div>
+                                <span class="sale-num-small ilBk-middle">40</span>
+                            </div>
+                            <div>
+                                <span class="sale-price ilBk-middle"><span>￥</span>
+                                <span>16</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </li>
+                <li class="smallImg-footItem forsearch" id="1535743">
+                <div>
+                    <img src="http://imgcdn.diandianwaimai.com/dd_op/attached/image/140x126/20170304135816172459.jpg" alt="菜品图片">
+                </div>
+                <div class="info">
+                    <div class="footItem-name">
+                        <span>
+                        <span>一碗香饭</span>
+                        </span>
+                    </div>
+                    <div class="footerItem-info-operate">
+                        <div class="operate-div">
+                            <div class=" reduce-btn-div">
+                                <span class="reduce-btn btn ilBk-middle"></span>
+                            </div>
+                            <div>
+                                <span class="select-num ilBk-middle">1</span>
+                            </div>
+                            <div class="add-btn-div">
+                                <span class="add-btn btn ilBk-middle"></span>
+                            </div>
+                        </div>
+                        <div class="footerItem-info">
+                            <div>
+                                <span class="sale-num-small ilBk-middle">39</span>
+                            </div>
+                            <div>
+                                <span class="sale-price ilBk-middle">
+                                <span>￥</span>
+                                <span>16</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </li>
+            </ul>
+            <div class="classify-content" id="groupTitle1" data-idx="1">
+                <span class="classify-title">桂香特色焖饭</span>
+                <ul class="menu-ul">
+                    <li class="smallImg-footItem forsearch" id="1535723">
+                    <div>
+                        <!-- <img src="./images/food_default.png" alt="菜品图片"> -->
+                    </div>
+                    <div class="info">
+                        <div class="footItem-name">
+                            <span><span>香煎鱼腩饭</span></span>
+                        </div>
+                        <div class="footerItem-info-operate">
+                            <div class="operate-div">
+                                <div class="add-btn-div">
+                                    <span class="add-btn btn ilBk-middle"></span>
+                                </div>
+                            </div>
+                            <div class="footerItem-info">
+                                <div>
+                                    <span class="sale-num-small ilBk-middle">18</span>
+                                </div>
+                                <div>
+                                    <span class="sale-price ilBk-middle"><span>￥</span>
+                                    <span>13</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="smallImg-footItem forsearch" id="1552702">
+                    <div>
+                        <img src="./images/food_default.png" alt="菜品图片">
+                    </div>
+                    <div class="info">
+                        <div class="footItem-name">
+                            <span><span>香煎鱼腩饭套餐</span></span>
+                        </div>
+                        <div class="footerItem-info-operate">
+                            <div class="operate-div">
+                                <div class="add-btn-div">
+                                    <span class="add-btn btn ilBk-middle"></span>
+                                </div>
+                            </div>
+                            <div class="footerItem-info">
+                                <div>
+                                    <span class="sale-num-small ilBk-middle">0</span>
+                                </div>
+                                <div>
+                                    <span class="sale-price ilBk-middle">
+                                    <span>￥</span><span>18</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="smallImg-footItem forsearch" id="1552702">
+                    <div>
+                        <img src="./images/food_default.png" alt="菜品图片">
+                    </div>
+                    <div class="info">
+                        <div class="footItem-name">
+                            <span><span>香煎鱼腩饭套餐</span></span>
+                        </div>
+                        <div class="footerItem-info-operate">
+                            <div class="operate-div">
+                                <div class="add-btn-div">
+                                    <span class="add-btn btn ilBk-middle"></span>
+                                </div>
+                            </div>
+                            <div class="footerItem-info">
+                                <div>
+                                    <span class="sale-num-small ilBk-middle">0</span>
+                                </div>
+                                <div>
+                                    <span class="sale-price ilBk-middle">
+                                    <span>￥</span><span>18</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="smallImg-footItem forsearch" id="1552702">
+                    <div>
+                        <img src="./images/food_default.png" alt="菜品图片">
+                    </div>
+                    <div class="info">
+                        <div class="footItem-name">
+                            <span><span>香煎鱼腩饭套餐</span></span>
+                        </div>
+                        <div class="footerItem-info-operate">
+                            <div class="operate-div">
+                                <div class="add-btn-div">
+                                    <span class="add-btn btn ilBk-middle"></span>
+                                </div>
+                            </div>
+                            <div class="footerItem-info">
+                                <div>
+                                    <span class="sale-num-small ilBk-middle">0</span>
+                                </div>
+                                <div>
+                                    <span class="sale-price ilBk-middle">
+                                    <span>￥</span><span>18</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="smallImg-footItem forsearch" id="1552702">
+                    <div>
+                        <img src="./images/food_default.png" alt="菜品图片">
+                    </div>
+                    <div class="info">
+                        <div class="footItem-name">
+                            <span><span>香煎鱼腩饭套餐</span></span>
+                        </div>
+                        <div class="footerItem-info-operate">
+                            <div class="operate-div">
+                                <div class="add-btn-div">
+                                    <span class="add-btn btn ilBk-middle"></span>
+                                </div>
+                            </div>
+                            <div class="footerItem-info">
+                                <div>
+                                    <span class="sale-num-small ilBk-middle">0</span>
+                                </div>
+                                <div>
+                                    <span class="sale-price ilBk-middle">
+                                    <span>￥</span><span>18</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+            </section>
+            <!-- 左侧列表结束 -->
+            <!-- 浮动层 数量 下一步 -->
+            <footer class="footer-car" id="shopCar">
+            <div class="shop-car-div">
+                <div class="shop-car" id="shopCarIcon">
+                </div>
+                <div class="peopleNum">
+                    <span>共</span>
+                    <span id="selectedCount">1</span>
+                    <span>份</span>
+                </div>
+                <div class="count-price-div">
+                    <span>总价：￥</span>
+                    <span>20</span>
+                </div>
+            </div>
+            <div class="certain-div">
+                <a href="order.html">
+                <div class="certain-btn"> 下一步</div>
+                </a>
+            </div>
+            </footer>
+            <!-- 底部Tabc菜单 -->
+            <footer class="footer-nav">
+            <div class="footer-nav-div">
+                <ul class="now-online-ul footer-nav-ul">
+                    <li class="online-icon"></li>
+                    <li class="text-li">点餐</li>
+                </ul>
+            </div>
+            <div class="footer-nav-div">
+                 <a href="myOrder.html">
+                <ul class="footer-nav-ul history-ul">
+                    <li class="history-icon"></li>
+                    <li class="text-li">订单</li>
+                </ul>
+                 </a>
+            </div>
+            </footer>
+        </div>
+        </section>
+        <!-- 主层结束 -->
+        <!-- 弹出层 选择规格属性 -->
+        <section class="floating-div" id="floating" style="display:none;"></section>
+        <section class="property-model" style="display:none;">
+        <div class="close-model">
+            <i class="close-model-btn"></i>
+        </div>
+        <div class="popup-div">
+            <div class="popup-header">
+                <div>
+                    <img src="./images/food_default.png" alt="">
+                </div>
+                <div>
+                    <div class="footerItem-name">
+                        尖椒回锅肉饭
+                    </div>
+                    <div>
+                        <div class="sale-price-suit">
+                            <span>￥</span>
+                            <span>15</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-body">
+                <ul class="property-ul">
+                    <li>
+                    <div>
+                        配饮料
+                    </div>
+                     <ul>
+                         <li class="property-item">大份</li>
+                         <li class="property-item">中份</li>
+                         <li class="selected-property-item">小份</li>
+                     </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="popup-footer">
+                选好了
+            </div>
+        </div>
+        </section>
+        <!-- 弹出层 购物车详情 -->
+        <section class="shopCar-model" style="display:none;">
+        <div id="shop-card-div">
+            <div class="shop-card-header">
+                <i class="close-popup"></i>
+                <div class="shop-card-name">
+                    购物车
+                </div>
+                <div class="clean-shopCard-div">
+                    <i></i>
+                    <span>清空</span>
+                </div>
+            </div>
+            <ul id="shopCardItem">
+                <li>
+                <div class="operate-div">
+                    <div class="padding-6">
+                        <span class="reduce-btn btn ilBk-middle"></span>
+                    </div>
+                    <div>
+                        <span class="select-num ilBk-middle">1</span>
+                    </div>
+                    <div class="padding-6">
+                        <span class="add-btn btn ilBk-middle"></span> 
+                    </div>
+                </div>
+                <div class="footerItem-name">
+                    尖椒回锅肉饭(冻奶茶)
+                </div>
+                </li>
+                <li>
+                <div class="operate-div">
+                    <div class="padding-6">
+                        <span class="reduce-btn btn ilBk-middle"></span>
+                    </div>
+                    <div>
+                        <span class="select-num ilBk-middle">1</span>
+                    </div>
+                    <div class="padding-6">
+                        <span class="add-btn btn ilBk-middle"></span>
+                    </div>
+                </div>
+                <div class="footerItem-name">
+                    酸甜排骨饭(冻柠茶)
+                </div>
+                </li>
+                <li>
+                <div class="operate-div">
+                    <div class="padding-6">
+                        <span class="reduce-btn btn ilBk-middle"></span>
+                    </div>
+                    <div>
+                        <span class="select-num ilBk-middle">1</span>
+                    </div>
+                    <div class="padding-6">
+                        <span class="add-btn btn ilBk-middle"></span>
+                    </div>
+                </div>
+                <div class="footerItem-name">
+                    菜心肉片饭(冻柠茶)
+                </div>
+                </li>
+            </ul>
+            <div class="shop-card-footer">
+                <div class="popup-shop-card">
+                    <div class="shop-car">
+                        <b id="count-dishes">3</b>
+                    </div>
+                    <div class="count-price-div shopCard-conut-price-div">
+                        <span>总价：￥</span>
+                        <span>60</span>
+                    </div>
+                </div>
+                <div class="popup-btn-confirm">
+                    确认下单
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- 弹出层  搜索商品 -->
+        <section class="search-model" id="searchSection" style="display:none;">
+            <div class="header-search" id="searchClose"><div class="close-search"></div><div><span class="search-ipt"><input type="text"></span><span class="search-certain">搜 索</span></div></div>
+        </div>
+        <div class="hot-dish-div">
+            <div class="hot-dish-header">
+                <div class="hot-dish-title"><i></i>
+                    <span>本店热门</span>
+                </div>
+            </div>
+            <ul class="hot-dish-ul">
+                <li><span>回锅肉饭</span></li>
+                <li><span>菜心肉片饭</span></li>
+                <li><span>白切鸡</span></li>
+                <li><span>回锅肉饭</span></li>
+                <li><span>菜心肉片饭</span></li>
+                <li><span>白切鸡</span></li>
+            </ul>
+        </div>
+    </section>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.add-btn-div').click(function(){
+            $('#floating').show();
+            $('.property-model').show();
+        });
+        $('.close-model-btn').click(function(){
+            $('#floating').hide();
+            $('.property-model').hide();
+        });
+        $('.popup-footer').click(function(){
+            $('#floating').hide();
+            $('.property-model').hide();
+            $('.shopCar-model').show();
+        });
+        $('#shopCarIcon').click(function (){
+            $('.shopCar-model').show();
+        });
+        $('.close-popup').click(function (){
+            $('.shopCar-model').hide();
+        });
+         $('.search-btn-icon').click(function(){
+             $("#searchSection").show();
+        });
+       
+        $('#searchClose').click(function(){
+            $("#searchSection").hide();
+         });
+        $('.add-btn-div').click(function(){
+
+        });
+    });
+</script>
+</html>
